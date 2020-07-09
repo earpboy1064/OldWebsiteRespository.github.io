@@ -1,104 +1,88 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Employee table</title>
-	<style>
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
 		body {
-			width: 750px;
-			margin: 0 auto;
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid blue;
 		}
-		table {
-			border-collapse: collapse;
-			border: 1px solid black;
-			margin: 20px;
+		h1 {
+			color: blue; 
+			font-size: 140%;
 		}
-		caption {
-			font-size: 150%;
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width:8em;
 			font-weight: bold;
-			padding-bottom: .5em;
-		}
-		thead, tfoot {
-			background-color: yellow;
-		}
-		tfoot {
-			font-weight: bold;
-		}
-		th, td {
-			border: 1px solid black;
-			padding: .2em 1em .2em .5em;
 			text-align: left;
-			vertical-align: middle;
 		}
-		.right {
-			text-align: right;
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
 		}
-		.top {
-			vertical-align: top;
+		input[type="checkbox"] {
+			width: 1em;
 		}
-		tbody tr:nth-child(even) td {
-			background-color: yellow;
+		input:required, input:invalid {
+			box-shadow: none;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
 		}
 	</style>
 </head>
 
 <body>
-<table>
-	<caption>Employee Table</caption>
-	<thead>
-		<tr>
-			<th>Department</th>
-			<th>Name</th>
-			<th>E-mail</th>
-			<th class="right">Years of Service</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th class="top" rowspan="3">Editorial</th>
-			<td>Joel Murach</td>
-			<td>joelmurach@yahoo.com</td>
-			<td class="right">22</td>
-		</tr>
-		<tr>
-			<td>Anne Boehm</td>
-			<td>anne@murach.com</td>
-			<td class="right">34</td>
-		</tr>
-		<tr>
-			<td>Zak Ruvalcaba</td>
-			<td>zak@modulemedia.com</td>
-			<td class="right">4</td>
-		</tr>
-		<tr>
-			<th class="top" rowspan="2">Marketing</th>
-			<td>Judy Taylor</td>
-			<td>judy@murach.com</td>
-			<td class="right">39</td>
-		</tr>
-		<tr>
-			<td>Cyndi Vasquez</td>
-			<td>cyndi@murach.com</td>
-			<td class="right">10</td>
-		</tr>
-		<tr>
-			<th class="top" rowspan="2">Customer Service</th>
-			<td>Kelly Slivkoff</td>
-			<td>kelly@murach.com</td>
-			<td class="right">25</td>
-		</tr>
-		<tr>
-			<td>Juliette Baylon</td>
-			<td>juliette@murach.com</td>
-			<td class="right">1</td>
-		</tr>
-	</tbody>
-	<tfoot>
-		<tr>
-			<th class="right" colspan="3">Total Years of Service</th>
-			<td class="right">105</td>
-		</tr>
-	</tfoot>
-</table>
+<h1>Please complete our survey</h1>
+<form name="myform" action="survey_data.html" method="get">
+	
+	<h2>Contact information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required ><br>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+    
+    <h2>Geographic information</h2>
+    <label for="state">State:</label>
+    <input type="text" name="state" id="state" required placeholder="Two characters"
+    	   pattern="[A-Za-z]{2}" title="Must be 2 characters"><br>
+    <label for="zip">Zip code:</label>
+    <input type="text" name="zip" id="zip" required placeholder="Five digits"
+           pattern="\d{5}" title="Must be 99999"><br>
+    
+    <h2>How did you hear about us?</h2>
+    <input type="checkbox" name="web" id="web" value="web">
+    <label for="web">Web Search:</label><br>
+    <input type="checkbox" name="facebook" id="facebook" value="facebook">
+	<label for="facebook">Facebook:</label><br>
+	<input type="checkbox" name="twitter" id="twitter" value="twitter">
+	<label for="twitter">Twitter:</label><br>
+	<input type="checkbox" name="message" id="message" value="message">
+	<label for="message">Email message:</label><br>
+    
+    <h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="register" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
 </body>
 </html>
