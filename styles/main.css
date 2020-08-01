@@ -1,0 +1,291 @@
+
+
+
+/* 
+start of all css controlling anything inside the header
+*/
+
+header
+{
+    
+  width: 800px;
+  height: 90px;
+    border-bottom: 5px solid orangered;  
+    background-color: darkgray;
+    padding: 10px;
+    margin: 0 auto;
+    z-index: -1;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  bottom: 0px;
+  
+}
+
+
+.headtext 
+{
+    color: orangered;
+    
+}
+
+.headimage
+{
+    
+  position: relative;
+  top: -20px;
+  left: 30px;
+  bottom: 0px;
+    
+    
+}
+
+/* 
+end of all css controlling anything inside the header
+*/
+
+
+
+
+
+/* 
+start of all css controlling anything inside the body
+*/
+body 
+{
+  padding: 5px;
+  width: 800px;
+  height: 1600px;
+  background-color: white;
+  border: 5px solid black;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+
+bannerImage
+{
+ position: relative;
+ top: 0px;
+ left: 150px;
+ bottom: 0px;
+ margin: 0 auto;
+ padding: 60px;
+ z-index: -1; 
+}
+
+
+/*sidebar css start*/
+sidebar
+{
+  float: left;
+  width: 150px;
+  height: 800px;  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  border: 5px solid orangered;
+  padding: 0x;
+  
+  margin: 5px;
+  position: relative;
+  top: -300px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+    
+}
+
+.sidebarimage
+{
+ margin-left: auto;
+ margin-right: auto;
+ display: block; 
+ padding: 5px;
+}
+
+
+.sidebarText
+{
+    
+ color: black; 
+ padding-left: 2px;
+ padding-right: 2px;
+}
+/*sidebar css end*/
+
+
+
+boxLeft
+{
+    
+  float: left;
+  width: 200px;
+  height: 500px;  
+  background-color: white;
+  border: 5px solid orangered;
+  padding: 0x;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+  margin: 5px;
+  position: relative;
+  top: 100px;
+  left: 50px;
+  bottom: 0px;
+  z-index: 1;  
+    
+    
+    
+}
+
+
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+
+
+boxRight
+{
+    
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+  float: left;
+  width: 200px;
+  height: 500px;  
+  background-color: white;
+  border: 5px solid orangered;
+  padding: 0x;
+  
+  margin: 5px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  bottom: 0px;
+  z-index: 1;  
+    
+    
+    
+    
+}
+
+
+
+/* 
+end of all css controlling anything inside the body
+*/
+
+
+
+.links
+{
+
+
+    
+}
+
+li
+{
+    align-content:left;
+    margin: 0 auto;
+    padding: 7px
+        
+    
+}
+
+a
+{ 
+text-decoration: none;
+color: black;
+}
+
+a:hover {color: orangered;}
+
+
+
+ul
+{
+    padding: 20px;
+    list-style-type: none;
+    
+    
+}
+
+
+.info
+{
+  padding: 20px;
+  margin: 20px;
+  float:right;
+   width: 500px;
+  position: relative;
+   bottom: -45px; 
+   left: -30px;
+    
+}
+/* 
+start of all css controlling anything inside the footer
+*/
+
+footer 
+{
+
+   position: relative;
+   Width: 100%;
+   bottom: -1075px; 
+   left: -10px;
+    
+   width: 800px;
+   height: 70px;
+    border-top: 5px solid orangered;  
+    background-color: darkgray;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 0px ;
+    z-index: -1;
+  
+    
+    
+ /* position: relative;
+  top: 590px;
+  left: -10px;
+  bottom: 0px;*/
+}
+
+
+.footText
+{
+    position: relative;
+   Width: 100%;
+   bottom: 780px; 
+   left: 350px;
+    float: left;
+   width: 800px;
+   height: 70px;
+    color: Black;
+    margin: auto 0px;
+     z-index: -1;
+
+}
+
+.extra
+{
+    
+   position: relative;
+   Width: 100%;
+   bottom: 820px; 
+   left: 280px;
+   float: left;
+   width: 800px;
+   height: 70px;
+   color: Black;
+   margin: auto 0px;
+   z-index: 2;
+}
+
+/* 
+start of all css controlling anything inside the footer
+*/
