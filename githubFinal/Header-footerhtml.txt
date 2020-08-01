@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<header><meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+    
+    
+    
+<img clss="headimage" src="images/header-1.png"alt="Logo" width="700" class="headimage">
+    
+
+</header>
+    
+    <body>
+   <h1>  </h1>
+        
+        
+        
+   <sidebar>
+       
+       
+       <img src="images/eyesLogo.png" alt="Logo" width = "100" class="sidebarimage"> 
+       
+       <div class = "sidebarText">Was justice improve age article between. No projection as up preference reasonably delightful celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters forming far village elderly compact. </div>
+       
+    </sidebar>
+    
+    
+    
+    </body>
+    
+    <footer>
+ <h1 class = "footText"> And painted letters forming far village elderly compact </h1>
+    </footer>
+    
+    
+    
+    the CSS below
+    
+    
+    /* 
+start of all css controlling anything inside the header
+*/
+/* 
+start of all css controlling anything inside the header
+*/
+
+header
+{
+    
+  width: 800px;
+  height: 90px;
+    border-bottom: 5px solid orangered;  
+    background-color: darkgray;
+    padding: 10px;
+    margin: 0 auto;
+    z-index: -1;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  bottom: 0px;
+  
+}
+
+
+.headtext 
+{
+    color: orangered;
+    
+}
+
+.headimage
+{
+    
+  position: relative;
+  top: -20px;
+  left: 30px;
+  bottom: 0px;
+    
+    
+}
+
+/* 
+end of all css controlling anything inside the header
+*/
+
+
+
+
+
+/* 
+start of all css controlling anything inside the body
+*/
+body 
+{
+  padding: 5px;
+  width: 800px;
+  height: 800px;
+  background-color: white;
+  border: 5px solid black;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+
+
+/*sidebar css start*/
+sidebar
+{
+  float: left;
+  width: 150px;
+  height: 500px;  
+  background-color: white;
+  border: 5px solid orangered;
+  padding: 0x;
+  
+  margin: 5px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+    
+}
+
+.sidebarimage
+{
+ margin-left: auto;
+ margin-right: auto;
+ display: block; 
+ padding: 5px;
+}
+
+
+.sidebarText
+{
+    
+  color: black;  
+ padding-left: 2px;
+ padding-right: 2px;
+}
+/*sidebar css end*/
+
+
+
+/* 
+end of all css controlling anything inside the body
+*/
+
+
+
+
+
+
+
+
+
+/* 
+start of all css controlling anything inside the footer
+*/
+
+footer 
+{
+
+   position: relative;
+   Width: 100%;
+   bottom: -580px; 
+   left: -10px;
+    
+   width: 800px;
+   height: 70px;
+    border-top: 5px solid orangered;  
+    background-color: darkgray;
+    background-color: darkgray;
+    padding: 10px;
+    margin: 0px ;
+    z-index: -1;
+ /* position: relative;
+  top: 590px;
+  left: -10px;
+  bottom: 0px;*/
+}
+
+
+.footText
+{
+    color: orangered;
+    margin: auto 0px;
+    
+}
+
+/* 
+start of all css controlling anything inside the footer
+*/
